@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>test</title>
+<script type="text/javascript" src="./jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="./jquery.simple_dateformat.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	var date = new Date();
+	$("#span_id_1").append("yyyyMMddHHmmssSSS" + " -> " + $.simple_dateformat(date, "yyyyMMddHHmmssSSS")); // yyyy/M/MM/d/dd/HH/mm/ss/SSS
+	$("#span_id_2").append("yyyy/M/d HH:mm:ss" + " -> " + $.simple_dateformat(date, "yyyy/M/d HH:mm:ss"));
+});
+</script>
+</head>
+<body>
+<span id="span_id_1"></span><br />
+<span id="span_id_2"></span><br />
+</body>
+</html>
