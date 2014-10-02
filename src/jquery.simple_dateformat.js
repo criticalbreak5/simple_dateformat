@@ -1,12 +1,12 @@
 /*!
- * jQuery SimpleDateformat Plugin v1.0.0
+ * jQuery SimpleDateformat Plugin v1.0.1
  * https://github.com/criticalbreak5/simple_dateformat
  *
  * Copyright 2014 criticalbreak5's
  * Released under the MIT license
  * http://opensource.org/licenses/mit-license.php
  *
- * Date: 2014-08-10T00:00Z
+ * Date: 2014-08-25T00:00Z
  */
 (
 	function($) {
