@@ -6,9 +6,9 @@ For speed priority, The date/time format which can be used is limited.
   
 This plug-in was created for the educational purpose.  
   
-2014.10.06 Append
-Added a function to convert a String type to a Date type.
-(yyyy/MM/dd/HH/mm/ss/SSS only)
+2014.10.06 Append  
+Added a function to convert a String type to a Date type.  
+(yyyy/MM/dd/HH/mm/ss/SSS only)  
 Browser tested  
 ---------------------------------
 Google Chrome  
