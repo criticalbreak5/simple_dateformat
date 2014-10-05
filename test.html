@@ -10,14 +10,22 @@
 <script type="text/javascript" src="./jquery.simple_dateformat.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
-	var date = new Date();
-	$("#span_id_1").append("yyyyMMddHHmmssSSS" + " -> " + $.simple_dateformat(date, "yyyyMMddHHmmssSSS")); // yyyy/M/MM/d/dd/HH/mm/ss/SSS
-	$("#span_id_2").append("yyyy/M/d HH:mm:ss" + " -> " + $.simple_dateformat(date, "yyyy/M/d HH:mm:ss"));
+	var date_0 = new Date();
+	$("#span_id_0").append(date_0);
+	var datestring_1 = $.simple_dateformat(date_0, "yyyyMMddHHmmssSSS"); // yyyy,M,MM,d,dd,HH,mm,ss,SSS.
+	$("#span_id_1").append("yyyyMMddHHmmssSSS" + " -> " + datestring_1);
+	var date_2 = $.simple_dateparse(datestring_1, "yyyyMMddHHmmssSSS");  // yyyy,MM,dd,HH,mm,ss,SSS.
+	$("#span_id_2").append(date_2);
+
+	var datestring_3 = $.simple_dateformat(date_0, "yyyy/M/d HH:mm:ss");
+	$("#span_id_3").append("yyyy/M/d HH:mm:ss" + " -> " + datestring_3);
 });
 </script>
 </head>
 <body>
+<span id="span_id_0"></span><br />
 <span id="span_id_1"></span><br />
 <span id="span_id_2"></span><br />
+<span id="span_id_3"></span><br />
 </body>
 </html>
