@@ -1,5 +1,5 @@
 /*!
- * jQuery SimpleDateformat Plugin v1.0.2
+ * jQuery SimpleDateformat Plugin v1.0.3
  * https://github.com/criticalbreak5/simple_dateformat
  *
  * Copyright 2014 criticalbreak5's
